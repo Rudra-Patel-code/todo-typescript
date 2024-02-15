@@ -44,7 +44,7 @@ This is a Todo List web application built using React.js and TypeScript. It prov
 
    ```
 
-3. Start the server dependencies:
+3. Start the server:
 
    ```bash
    npm run dev
