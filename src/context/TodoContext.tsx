@@ -75,20 +75,6 @@ const TodoProvider: React.FC<{ children: React.ReactNode }> = ({
     toast.success("Todo deleted successfully!");
   };
 
-  const createDemoTodo = (title: string, description: string) => {
-    let todo: TodoInterface = {
-      title,
-      description,
-      isComplete: false,
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString(),
-      _id: Date.now().toString(),
-    };
-
-    setTodos((prev) => [todo, ...prev]);
-    toast.success("Todo created Successfully");
-  };
-
   useEffect(() => {
     // setting up demo todos
     const demoTodos = [
